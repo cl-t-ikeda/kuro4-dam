@@ -1,0 +1,33 @@
+{
+  "name": "Kuro4-dam Project",
+  "dockerComposeFile":"docker-compose.yml",
+  "service": "dev",
+  "workspaceFolder": "/workspace",
+  "shutdownAction": "stopCompose",
+  "remoteUser": "vscode",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.profiles.linux": {
+          "bash": {
+            "path": "/bin/bash"
+          }
+        },
+        "terminal.integrated.defaultProfile.linux": "bash"
+      },
+      "extensions": [
+        "ms-ceintl.vscode-language-pack-ja",
+        "ms-dotnettools.csdevkit",
+        "mongodb.mongodb-vscode",
+        "hediet.vscode-drawio",
+        "ms-vsliveshare.vsliveshare"
+      ]
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {}
+  },
+  "remoteEnv": {
+    "PATH": "${containerEnv:PATH}:${containerWorkspaceFolder}/.devcontainer/scripts"
+  }
+}

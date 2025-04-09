@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "coreclr",
+      "request": "launch",
+      "name": "ConsoleApp Debug",
+      "program": "${workspaceFolder}/ConsoleApp/bin/Debug/net8.0/ConsoleApp.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/ConsoleApp",
+      "stopAtEntry": false,
+      "preLaunchTask": "build ConsoleApp"
+    }
+  ]
+}
